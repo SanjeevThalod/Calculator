@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="9.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" name="put" class="row" id="put">
+            <div class="row">
+                <input type="button" value="AC" onclick="put.value = '' ">
+                <input type="button" value="DE" onclick="put.value = put.value.toString().slice(0,-1)">
+                <input type="button" value="." onclick="put.value += '.'  ">
+                <input type="button" value="/" onclick="put.value += '/'  ">
+            </div>
+            <div class="row">
+                <input type="button" value="7" onclick="put.value += '7'  ">
+                <input type="button" value="8" onclick="put.value += '8'  ">
+                <input type="button" value="9" onclick="put.value += '9'  ">
+                <input type="button" value="*" onclick="put.value += '*'  ">
+            </div>
+            <div class="row">
+                <input type="button" value="4" onclick="put.value += '4'  ">
+                <input type="button" value="5" onclick="put.value += '5'  ">
+                <input type="button" value="6" onclick="put.value += '6'  ">
+                <input type="button" value="-" onclick="put.value += '-'  ">
+            </div>
+            <div class="row">
+                <input type="button" value="1" onclick="put.value += '1'  ">
+                <input type="button" value="2" onclick="put.value += '2'  ">
+                <input type="button" value="3" onclick="put.value += '3'  ">
+                <input type="button" value="+" onclick="put.value += '+'  ">
+            </div>
+            <div class="row">
+                <input type="button" value="pi" onclick="put.value += '3.14'  ">
+                <input type="button" value="0" onclick="put.value += '0'  ">
+                <input type="button" value="e"  onclick="put.value += '2.718'  ">
+                <input type="button" value="=" onclick="put.value = eval(put.value)">
+            </div>
+        </form>
+    </div>
+    <script src="9.js"></script>
+</body>
+</html>
