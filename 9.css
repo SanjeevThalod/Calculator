@@ -11,7 +11,7 @@ body{
 }
 .container{
     height: 500px;
-    min-width: 370px;
+    min-width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,7 +27,7 @@ body{
     justify-content: space-between;
 }
 input[type=button]{
-    font-family: cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -50,4 +50,34 @@ input[type=text]{
     margin-bottom: 16px;
     font-weight: 600;
     text-align: end;
+}
+input[value=AC]{
+    background-color: rgba(255,0,255,0.6);
+}
+input[value=DE]{
+    background-color: rgba(255,0,255,0.6);
+}
+input[value='.']{
+    background-color: rgba(255,0,0,0.6);
+}
+input[value='/']{
+    background-color: rgba(255,255,0,0.6);
+}
+input[value='*']{
+    background-color: rgba(255,255,0,0.6);
+}
+input[value='-']{
+    background-color: rgba(255,255,0,0.6);
+}
+input[value='+']{
+    background-color: rgba(255,255,0,0.6);
+}
+input[value='=']{
+    background-color: rgba(255,255,0,0.6);
+}
+input[value=pi]{
+    background-color: rgba(255,0,0,0.6);
+}
+input[value=e]{
+    background-color: rgba(255,0,0,0.6);
 }
